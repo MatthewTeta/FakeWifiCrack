@@ -1,0 +1,125 @@
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+	}
+}
+
+@font-face {
+	font-family: 'Squared';
+	src: url('fonts/SquaredDisplay.ttf');
+	font-weight: 100;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+body>section {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+body>section>h1 {
+	color: #0F0;
+	width: 65%;
+	margin: 0.75em auto;
+	margin-bottom: 0.5em;
+	font-family: 'VT323', sans-serif;
+	font-size: 7em;
+	font-weight: 400;
+	font-style: italic;
+}
+
+section#header {
+	background: #000;
+	cursor: pointer;
+}
+
+section#header div {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+section#header h1 {
+	color: #0F0;
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'VT323', sans-serif;
+	font-size: 4em;
+	font-weight: 100;
+	text-align: left;
+	line-height: 1em;
+	float: left;
+}
+
+section#header h1 span {
+	color: #0F0;
+}
+
+section#header h3 {
+	color: #0F0;
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'VT323', sans-serif;
+	font-size: 3.5em;
+	font-weight: 100;
+	text-align: left;
+	float: left;
+}
+
+section#header h3:after {
+	position: relative;
+	top: -0.125em;
+	content: '|';
+	-webkit-animation: blink 1.5s infinite;
+	        animation: blink 1.5s infinite;
+}
+
+section#header h3.done:after {
+	content: '';
+}
+
+section#info {
+	background: #0f0;
+}
+
+section#info div {
+	width: 100%;
+	height: 100%;
+	background-color: #0F0;		
+}
